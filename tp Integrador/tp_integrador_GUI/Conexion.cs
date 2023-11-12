@@ -9,7 +9,7 @@ namespace tp_integrador_GUI
 {
     internal class Conexion
     {
-        public static MySqlConnection conexion()
+        public static MySqlConnection Conectar()
         {
             string servidor = "localhost";
             string db = "datos.db";

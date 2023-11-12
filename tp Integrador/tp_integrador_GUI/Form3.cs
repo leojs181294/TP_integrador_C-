@@ -38,7 +38,7 @@ namespace tp_integrador_GUI
             string Prov = txtProv.Text;
 
             string sql = "INSERT INTO proveedor(nombre_proveedor) VALUES ('" + Prov + "')";
-            MySqlConnection conexionDB = Conexion.conexion();
+            MySqlConnection conexionDB = Conexion.Conectar();
             conexionDB.Open();
 
             try
