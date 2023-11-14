@@ -48,7 +48,6 @@ C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\Git\TP_integrador_C-\tp I
 C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\Git\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.csproj.AssemblyReference.cache
 C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\Git\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.Form1.resources
 C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\Git\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.Form2.resources
-C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\Git\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.Form3.resources
 C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\Git\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.csproj.GenerateResource.cache
 C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\Git\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\Git\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.AssemblyInfoInputs.cache
@@ -60,3 +59,4 @@ C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\Git\TP_integrador_C-\tp I
 C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\Git\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.pdb
 C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\Git\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.genruntimeconfig.cache
 C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\Git\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\ref\tp_integrador_GUI.dll
+C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\Git\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.c_proveedor.resources

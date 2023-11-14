@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace tp_integrador_GUI
 {
-    public partial class Form3 : Form
+    public partial class c_proveedor : Form
     {
-        public Form3()
+        public c_proveedor()
         {
             InitializeComponent();
         }
@@ -30,14 +30,19 @@ namespace tp_integrador_GUI
 
         private void label1_Click(object sender, EventArgs e)
         {
-         
+
         }
 
         private void boton1_Click(object sender, EventArgs e)
         {
-            string Prov = txtProv.Text;
+            string Prov = txtProv1.Text;
+            string cel_prov = txtProv2.Text;
+            string nom_distribuidora = txtProv3.Text;
+            string direccion_prov = txtProv4.Text;
 
-            string sql = "INSERT INTO proveedor(nombre_proveedor) VALUES ('" + Prov + "')";
+
+
+            string sql = "INSERT INTO proveedor(nombre_proveedor, cel_prov, nom_distribuidora, direccion_prov) VALUES ('" + Prov + "', '" + cel_prov + "',  '" + nom_distribuidora + "', '" + direccion_prov + "')";
             MySqlConnection conexionDB = Conexion.Conectar();
             conexionDB.Open();
 
@@ -55,6 +60,11 @@ namespace tp_integrador_GUI
             {
                 conexionDB.Close();
             }
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
