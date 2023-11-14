@@ -8,4 +8,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>dependencias\MySql.Data.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

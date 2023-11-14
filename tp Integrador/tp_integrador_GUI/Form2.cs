@@ -24,7 +24,8 @@ namespace tp_integrador_GUI
 
         private void btnProveedor_Click(object sender, EventArgs e)
         {
-
+            c_proveedor fproveedor = new c_proveedor();
+            fproveedor.ShowDialog();
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)

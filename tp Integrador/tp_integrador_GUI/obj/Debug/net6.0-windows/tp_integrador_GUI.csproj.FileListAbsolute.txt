@@ -16,3 +16,47 @@ C:\Users\leojs\OneDrive\Escritorio\UTN programacion\cuatrimestre2\programacion I
 C:\Users\leojs\OneDrive\Escritorio\UTN programacion\cuatrimestre2\programacion II\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.pdb
 C:\Users\leojs\OneDrive\Escritorio\UTN programacion\cuatrimestre2\programacion II\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.genruntimeconfig.cache
 C:\Users\leojs\OneDrive\Escritorio\UTN programacion\cuatrimestre2\programacion II\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\ref\tp_integrador_GUI.dll
+C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\C#\tp_integrador_GUI\bin\Debug\net6.0-windows\tp_integrador_GUI.exe
+C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\C#\tp_integrador_GUI\bin\Debug\net6.0-windows\tp_integrador_GUI.deps.json
+C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\C#\tp_integrador_GUI\bin\Debug\net6.0-windows\tp_integrador_GUI.runtimeconfig.json
+C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\C#\tp_integrador_GUI\bin\Debug\net6.0-windows\tp_integrador_GUI.dll
+C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\C#\tp_integrador_GUI\bin\Debug\net6.0-windows\tp_integrador_GUI.pdb
+C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\C#\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.Form1.resources
+C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\C#\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.Form2.resources
+C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\C#\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.csproj.GenerateResource.cache
+C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\C#\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\C#\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.AssemblyInfoInputs.cache
+C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\C#\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.AssemblyInfo.cs
+C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\C#\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.csproj.CoreCompileInputs.cache
+C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\C#\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.dll
+C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\C#\tp_integrador_GUI\obj\Debug\net6.0-windows\refint\tp_integrador_GUI.dll
+C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\C#\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.pdb
+C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\C#\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.genruntimeconfig.cache
+C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\C#\tp_integrador_GUI\obj\Debug\net6.0-windows\ref\tp_integrador_GUI.dll
+C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\C#\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.csproj.AssemblyReference.cache
+C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\C#\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.Form3.resources
+C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\C#\tp_integrador_GUI\bin\Debug\net6.0-windows\MySql.Data.dll
+C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\C#\tp_integrador_GUI\bin\Debug\net6.0-windows\MySql.Data.xml
+C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\C#\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.csproj.CopyComplete
+C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\Git\TP_integrador_C-\tp Integrador\tp_integrador_GUI\bin\Debug\net6.0-windows\tp_integrador_GUI.exe
+C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\Git\TP_integrador_C-\tp Integrador\tp_integrador_GUI\bin\Debug\net6.0-windows\tp_integrador_GUI.deps.json
+C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\Git\TP_integrador_C-\tp Integrador\tp_integrador_GUI\bin\Debug\net6.0-windows\tp_integrador_GUI.runtimeconfig.json
+C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\Git\TP_integrador_C-\tp Integrador\tp_integrador_GUI\bin\Debug\net6.0-windows\tp_integrador_GUI.dll
+C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\Git\TP_integrador_C-\tp Integrador\tp_integrador_GUI\bin\Debug\net6.0-windows\tp_integrador_GUI.pdb
+C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\Git\TP_integrador_C-\tp Integrador\tp_integrador_GUI\bin\Debug\net6.0-windows\MySql.Data.dll
+C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\Git\TP_integrador_C-\tp Integrador\tp_integrador_GUI\bin\Debug\net6.0-windows\MySql.Data.xml
+C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\Git\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.csproj.AssemblyReference.cache
+C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\Git\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.Form1.resources
+C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\Git\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.Form2.resources
+C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\Git\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.csproj.GenerateResource.cache
+C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\Git\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\Git\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.AssemblyInfoInputs.cache
+C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\Git\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.AssemblyInfo.cs
+C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\Git\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.csproj.CoreCompileInputs.cache
+C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\Git\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.csproj.CopyComplete
+C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\Git\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.dll
+C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\Git\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\refint\tp_integrador_GUI.dll
+C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\Git\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.pdb
+C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\Git\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.genruntimeconfig.cache
+C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\Git\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\ref\tp_integrador_GUI.dll
+C:\Users\assas\OneDrive\Documentos\ArchivosImportantes\Git\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.c_proveedor.resources
