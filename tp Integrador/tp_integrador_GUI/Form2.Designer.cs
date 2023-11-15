@@ -42,10 +42,9 @@
             // 
             // btnProveedor
             // 
-            btnProveedor.Location = new Point(12, 38);
-            btnProveedor.Margin = new Padding(3, 2, 3, 2);
+            btnProveedor.Location = new Point(14, 51);
             btnProveedor.Name = "btnProveedor";
-            btnProveedor.Size = new Size(198, 72);
+            btnProveedor.Size = new Size(226, 96);
             btnProveedor.TabIndex = 0;
             btnProveedor.Text = "proveedor";
             btnProveedor.UseVisualStyleBackColor = true;
@@ -53,30 +52,28 @@
             // 
             // btn_fac_proveedor
             // 
-            btn_fac_proveedor.Location = new Point(12, 131);
-            btn_fac_proveedor.Margin = new Padding(3, 2, 3, 2);
+            btn_fac_proveedor.Location = new Point(14, 175);
             btn_fac_proveedor.Name = "btn_fac_proveedor";
-            btn_fac_proveedor.Size = new Size(198, 72);
+            btn_fac_proveedor.Size = new Size(226, 96);
             btn_fac_proveedor.TabIndex = 1;
             btn_fac_proveedor.Text = "Factura Proveedor";
             btn_fac_proveedor.UseVisualStyleBackColor = true;
             // 
             // btnNoteboock
             // 
-            btnNoteboock.Location = new Point(12, 229);
-            btnNoteboock.Margin = new Padding(3, 2, 3, 2);
+            btnNoteboock.Location = new Point(14, 305);
             btnNoteboock.Name = "btnNoteboock";
-            btnNoteboock.Size = new Size(198, 72);
+            btnNoteboock.Size = new Size(226, 96);
             btnNoteboock.TabIndex = 2;
             btnNoteboock.Text = "Noteboock";
             btnNoteboock.UseVisualStyleBackColor = true;
+            btnNoteboock.Click += btnNoteboock_Click;
             // 
             // btnVenta
             // 
-            btnVenta.Location = new Point(12, 321);
-            btnVenta.Margin = new Padding(3, 2, 3, 2);
+            btnVenta.Location = new Point(14, 428);
             btnVenta.Name = "btnVenta";
-            btnVenta.Size = new Size(198, 72);
+            btnVenta.Size = new Size(226, 96);
             btnVenta.TabIndex = 3;
             btnVenta.Text = "Venta";
             btnVenta.UseVisualStyleBackColor = true;
@@ -84,10 +81,9 @@
             // listView1
             // 
             listView1.Columns.AddRange(new ColumnHeader[] { ID, Nombre_Proveedor, Celular, Nombre_Distribuidora, Direccion });
-            listView1.Location = new Point(259, 11);
-            listView1.Margin = new Padding(3, 2, 3, 2);
+            listView1.Location = new Point(296, 15);
             listView1.Name = "listView1";
-            listView1.Size = new Size(909, 459);
+            listView1.Size = new Size(1038, 611);
             listView1.TabIndex = 4;
             listView1.UseCompatibleStateImageBehavior = false;
             listView1.View = View.Details;
@@ -95,15 +91,14 @@
             // 
             // Form2
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1180, 549);
+            ClientSize = new Size(1349, 732);
             Controls.Add(listView1);
             Controls.Add(btnVenta);
             Controls.Add(btnNoteboock);
             Controls.Add(btn_fac_proveedor);
             Controls.Add(btnProveedor);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "Form2";
             Text = "Form2";
             Load += Form2_Load;

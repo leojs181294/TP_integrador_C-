@@ -22,12 +22,6 @@ namespace tp_integrador_GUI
         {
 
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -63,6 +57,21 @@ namespace tp_integrador_GUI
         }
 
         private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtProv1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtProv2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void datos_proveedor_Enter(object sender, EventArgs e)
         {
 
         }

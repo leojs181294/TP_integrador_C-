@@ -32,5 +32,11 @@ namespace tp_integrador_GUI
         {
 
         }
+
+        private void btnNoteboock_Click(object sender, EventArgs e)
+        {
+            notebook fnotebook = new notebook();
+            fnotebook.ShowDialog();
+        }
     }
 }

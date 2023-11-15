@@ -38,28 +38,26 @@
             // 
             // txtUser
             // 
-            txtUser.Location = new Point(291, 16);
-            txtUser.Margin = new Padding(3, 2, 3, 2);
+            txtUser.Location = new Point(333, 21);
             txtUser.Name = "txtUser";
-            txtUser.Size = new Size(110, 23);
-            txtUser.TabIndex = 17;
+            txtUser.Size = new Size(125, 27);
+            txtUser.TabIndex = 1;
             // 
             // txtPassword
             // 
-            txtPassword.Location = new Point(291, 78);
-            txtPassword.Margin = new Padding(3, 2, 3, 2);
+            txtPassword.Location = new Point(333, 104);
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '*';
-            txtPassword.Size = new Size(110, 23);
-            txtPassword.TabIndex = 16;
+            txtPassword.Size = new Size(125, 27);
+            txtPassword.TabIndex = 2;
             // 
             // lbpassword
             // 
             lbpassword.AutoSize = true;
             lbpassword.Font = new Font("Segoe UI Historic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            lbpassword.Location = new Point(57, 70);
+            lbpassword.Location = new Point(65, 93);
             lbpassword.Name = "lbpassword";
-            lbpassword.Size = new Size(126, 30);
+            lbpassword.Size = new Size(157, 38);
             lbpassword.TabIndex = 15;
             lbpassword.Text = "passeword";
             // 
@@ -68,46 +66,43 @@
             lbuser.AutoSize = true;
             lbuser.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             lbuser.ForeColor = Color.Black;
-            lbuser.Location = new Point(57, 16);
+            lbuser.Location = new Point(65, 21);
             lbuser.Name = "lbuser";
-            lbuser.Size = new Size(62, 26);
+            lbuser.Size = new Size(77, 32);
             lbuser.TabIndex = 14;
             lbuser.Text = "User";
             // 
             // btnIngresar
             // 
-            btnIngresar.Location = new Point(381, 196);
-            btnIngresar.Margin = new Padding(3, 2, 3, 2);
+            btnIngresar.Location = new Point(435, 261);
             btnIngresar.Name = "btnIngresar";
-            btnIngresar.Size = new Size(82, 22);
-            btnIngresar.TabIndex = 18;
+            btnIngresar.Size = new Size(94, 29);
+            btnIngresar.TabIndex = 3;
             btnIngresar.Text = "Ingresar";
             btnIngresar.UseVisualStyleBackColor = true;
             btnIngresar.Click += btnIngresar_Click;
             // 
             // btnSalir
             // 
-            btnSalir.Location = new Point(10, 196);
-            btnSalir.Margin = new Padding(3, 2, 3, 2);
+            btnSalir.Location = new Point(11, 261);
             btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(82, 22);
-            btnSalir.TabIndex = 19;
+            btnSalir.Size = new Size(94, 29);
+            btnSalir.TabIndex = 4;
             btnSalir.Text = "Salir";
             btnSalir.UseVisualStyleBackColor = true;
             btnSalir.Click += btnSalir_Click;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(476, 225);
+            ClientSize = new Size(544, 300);
             Controls.Add(btnSalir);
             Controls.Add(btnIngresar);
             Controls.Add(txtUser);
             Controls.Add(txtPassword);
             Controls.Add(lbpassword);
             Controls.Add(lbuser);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;

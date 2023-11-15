@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/fXYjRVQia9Iu9NComM+lS056gvLj/Z1b4ZsG/wYr32bzOl41LSPqyDBeoPpCjY6GCghi6LCrDwrzAs28bMeNw==",
+  "dgSpecHash": "4V0aj+HIFTaxKHBIRqVR2LRWVYbhE1aGWy9BFPwXmGdLRGcTm/sU64UscFDnt/1pfhZWMTjA4WL4jfDZUMwJWA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\assas\\OneDrive\\Documentos\\ArchivosImportantes\\Git\\TP_integrador_C-\\tp Integrador\\tp_integrador_GUI\\tp_integrador_GUI.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\assas\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.22\\microsoft.windowsdesktop.app.ref.6.0.22.nupkg.sha512",
-    "C:\\Users\\assas\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.22\\microsoft.netcore.app.ref.6.0.22.nupkg.sha512",
-    "C:\\Users\\assas\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.22\\microsoft.aspnetcore.app.ref.6.0.22.nupkg.sha512",
-    "C:\\Users\\assas\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.22\\microsoft.netcore.app.host.win-x64.6.0.22.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\leojs\\source\\repos\\leojs181294\\TP_integrador_C-\\tp Integrador\\tp_integrador_GUI\\tp_integrador_GUI.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
