@@ -1,6 +1,6 @@
 ﻿namespace tp_integrador_GUI
 {
-    partial class notebook
+    partial class Notebook_crear
     {
         /// <summary>
         /// Required designer variable.

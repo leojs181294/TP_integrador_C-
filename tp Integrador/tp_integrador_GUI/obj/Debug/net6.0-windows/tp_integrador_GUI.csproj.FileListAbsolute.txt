@@ -69,9 +69,6 @@ C:\Users\leojs\source\repos\leojs181294\TP_integrador_C-\tp Integrador\tp_integr
 C:\Users\leojs\source\repos\leojs181294\TP_integrador_C-\tp Integrador\tp_integrador_GUI\bin\Debug\net6.0-windows\MySql.Data.xml
 C:\Users\leojs\source\repos\leojs181294\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.csproj.AssemblyReference.cache
 C:\Users\leojs\source\repos\leojs181294\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.c_proveedor.resources
-C:\Users\leojs\source\repos\leojs181294\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.Form1.resources
-C:\Users\leojs\source\repos\leojs181294\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.Form2.resources
-C:\Users\leojs\source\repos\leojs181294\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.notebook.resources
 C:\Users\leojs\source\repos\leojs181294\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.csproj.GenerateResource.cache
 C:\Users\leojs\source\repos\leojs181294\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\leojs\source\repos\leojs181294\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.AssemblyInfoInputs.cache
@@ -83,3 +80,7 @@ C:\Users\leojs\source\repos\leojs181294\TP_integrador_C-\tp Integrador\tp_integr
 C:\Users\leojs\source\repos\leojs181294\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.pdb
 C:\Users\leojs\source\repos\leojs181294\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.genruntimeconfig.cache
 C:\Users\leojs\source\repos\leojs181294\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\ref\tp_integrador_GUI.dll
+C:\Users\leojs\source\repos\leojs181294\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.Login.resources
+C:\Users\leojs\source\repos\leojs181294\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.Menu.resources
+C:\Users\leojs\source\repos\leojs181294\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.Notebook_crear.resources
+C:\Users\leojs\source\repos\leojs181294\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.notebook_menu.resources

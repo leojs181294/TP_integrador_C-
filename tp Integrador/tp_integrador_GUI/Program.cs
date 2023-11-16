@@ -6,9 +6,10 @@ using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace tp_integrador_GUI
 {
-        class Proveedor
+    /*class Proveedor
     {
         public int id_proveedor;
         public string nom_proveedor;
@@ -40,35 +41,13 @@ namespace tp_integrador_GUI
         }
 
     }
-    class Noteboock
-    {
-       public int id_noteboock;
-       public string marca;
-       public string modelo;
-       public string sist_operativo;
-       public string procesador;
-       public int nucleos;
-       public float velocidad_procesadora;
-       public int memoria_ram;
-       public int hdd;
-       public int sdd;
-       public int memoria_video;
-       public int puertos_usb;
-       public bool red_rj45;
-       public long precio_unitario;
-       public int stock;
-       public long stock_valorizado;//metodo
-       
-        //stock_valorizado=precio_unitario*stock;
-       // public int stock { get; set; }
-    }
     class Fac_noteboock
     {
         public int id_fact_noteboock;
         public int cantidad;
         public int precio_costo;
         public Fac_proveedor fac_proveedor;//id_fac_proveedor
-        public Noteboock noteboock;//id_noteboock
+        public Noteboock noteboock;//id_notebook
 
         //noteboock.setStock=noteboock.getStock+cantidad;
         public Double getprecio_total()
@@ -99,15 +78,15 @@ namespace tp_integrador_GUI
     {
         public int id_noteboock_venta;
         public Venta venta;//id_venta
-        public Noteboock noteboock;//id_noteboock
+        public Noteboock noteboock;//id_notebook
         public int cantidad;
-        public double getPrecio_total()
+      /*  public double getPrecio_total()
         {
             double precio_total = 0.00;
             precio_total= cantidad* noteboock.precio_unitario;
             return precio_total;
-        }
     }
+        }*/
 
     internal static class Program
     {
@@ -117,17 +96,10 @@ namespace tp_integrador_GUI
         [STAThread]
         static void Main()
         {
-            List<Proveedor> proveedor_list = new List<Proveedor>();
-            List<Fac_proveedor> fac_proveedor_list = new List<Fac_proveedor>();
-            List<Noteboock> noteboock_list = new List<Noteboock>();
-            List<Fac_noteboock> fac_noteboock_list = new List<Fac_noteboock>();
-            List<Venta> venta_list = new List<Venta>();
-            List<Noteboock_venta> noteboock_venta_list = new List<Noteboock_venta>();
-
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            Application.Run(new Login());
         }
     }
 }
