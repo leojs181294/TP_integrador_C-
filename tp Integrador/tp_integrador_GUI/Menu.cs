@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using tp_integrador_GUI.proveedores;
 
 namespace tp_integrador_GUI
 {
@@ -24,8 +25,8 @@ namespace tp_integrador_GUI
 
         private void btnProveedor_Click(object sender, EventArgs e)
         {
-            c_proveedor fproveedor = new c_proveedor();
-            fproveedor.ShowDialog();
+            menu_proveedores mproveedor = new menu_proveedores();
+            mproveedor.ShowDialog();
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
@@ -35,7 +36,7 @@ namespace tp_integrador_GUI
 
         private void btnNoteboock_Click(object sender, EventArgs e)
         {
-            Notebook_menu fnotebook = new Notebook_menu();
+            notebook_menu fnotebook = new notebook_menu();
             fnotebook.ShowDialog();
         }
     }

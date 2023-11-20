@@ -16,13 +16,14 @@ using tp_integrador_GUI.notebook;
 
 namespace tp_integrador_GUI
 {
-    public partial class Notebook_menu : Form
+    public partial class notebook_menu : Form
     {
         List<Notebook> notebooks = new List<Notebook>();
-        public Notebook_menu()
+        public notebook_menu()
         {
             InitializeComponent();
         }
+
         private void btn_crear_Click(object sender, EventArgs e)
         {
             Notebook_crear fnotebook = new Notebook_crear();
@@ -32,6 +33,12 @@ namespace tp_integrador_GUI
         {
             Notebook_crear fnotebook = new Notebook_crear();
             fnotebook.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+       
         }
     }
 }

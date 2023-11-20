@@ -14,7 +14,7 @@ namespace tp_integrador_GUI
             string servidor = "localhost";
             string db = "datos.db";
             string usuario = "root";
-            string password = "Fran2901";
+            string password = "2475";
 
             string cadena_conexion = "Database=" + db  + ";Data Source= " + servidor + ";User Id= " + usuario + ";Password= " + password+"";
 
