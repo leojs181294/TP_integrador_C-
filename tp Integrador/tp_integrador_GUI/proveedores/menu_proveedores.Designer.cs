@@ -55,6 +55,7 @@
             button1prov.TabIndex = 1;
             button1prov.Text = "Crear";
             button1prov.UseVisualStyleBackColor = true;
+            button1prov.Click += button1prov_Click;
             // 
             // button2prov
             // 
@@ -64,6 +65,7 @@
             button2prov.TabIndex = 2;
             button2prov.Text = "Modificar";
             button2prov.UseVisualStyleBackColor = true;
+            button2prov.Click += button2prov_Click;
             // 
             // button3prov
             // 
@@ -73,6 +75,7 @@
             button3prov.TabIndex = 3;
             button3prov.Text = "Eliminar";
             button3prov.UseVisualStyleBackColor = true;
+            button3prov.Click += button3prov_Click;
             // 
             // button4prov
             // 

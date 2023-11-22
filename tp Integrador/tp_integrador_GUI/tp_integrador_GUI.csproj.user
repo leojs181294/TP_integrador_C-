@@ -19,5 +19,8 @@
     <Compile Update="proveedores\menu_proveedores.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="proveedores\u_proveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

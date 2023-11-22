@@ -12,9 +12,9 @@ using tp_integrador_GUI.proveedores;
 
 namespace tp_integrador_GUI
 {
-    public partial class c_proveedor : Form
+    public partial class u_proveedor : Form
     {
-        public c_proveedor()
+        public u_proveedor()
         {
             InitializeComponent();
         }

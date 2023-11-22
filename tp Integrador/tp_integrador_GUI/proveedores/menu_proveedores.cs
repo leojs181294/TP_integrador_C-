@@ -69,9 +69,55 @@ namespace tp_integrador_GUI.proveedores
             CtrProveedores _CtrProveedores = new CtrProveedores();
             dataGridProv.DataSource = _CtrProveedores.consulta(dato);
         }
+        public void EliminarData(int id)
+        {
+
+            string sql = "DELETE FROM proveedor WHERE id_proveedor= '"+id +"'";
+            MySqlConnection conexionDB = Conexion.Conectar();
+            conexionDB.Open();
+
+            try
+            {
+                MySqlCommand comando = new MySqlCommand(sql, conexionDB);
+                comando.ExecuteNonQuery();
+                MessageBox.Show("Registro guardado");
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("error al guardar: " + ex.Message);
+            }
+            finally
+            {
+                conexionDB.Close();
+            }
+        }
         private void dataGridProv_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+        private void button1prov_Click(object sender, EventArgs e)
+        {
+            c_proveedor c_prov = new c_proveedor();
+            c_prov.ShowDialog();
+        }
+        private void button2prov_Click(object sender, EventArgs e)
+        {
+            u_proveedor u_prov = new u_proveedor();
+            u_prov.ShowDialog();
+        }
+
+        private void button3prov_Click(object sender, EventArgs e)
+        {
+            //Este boton es para eliminar brotherrr
+            DialogResult confirmacion = MessageBox.Show("Seguro que quiere eliminar este registro?", "Salir", MessageBoxButtons.YesNoCancel);
+            if(confirmacion == DialogResult.Yes)
+            {
+                int id = int.Parse(dataGridProv.CurrentRow.Cells[0].Value.ToString());
+                menu_proveedores _menu_prov = new menu_proveedores();
+                _menu_prov.EliminarData(id);
+                _menu_prov.CargarData(null);
+                
+            }
         }
     }
 }
