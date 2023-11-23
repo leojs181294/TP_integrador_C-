@@ -18,7 +18,9 @@ namespace tp_integrador_GUI.proveedores
             InitializeComponent();
             CargarData(null);
         }
-        class CtrProveedores : Conexion
+
+        public static DataGridViewRow selectedrow;
+        class CtrProveedores
         {
             public List<object> consulta(string dato)
             {
@@ -99,11 +101,26 @@ namespace tp_integrador_GUI.proveedores
         {
             c_proveedor c_prov = new c_proveedor();
             c_prov.ShowDialog();
+            CargarData(null);
         }
-        private void button2prov_Click(object sender, EventArgs e)
+        public void button2prov_Click(object sender, EventArgs e)
         {
-            u_proveedor u_prov = new u_proveedor();
+
+            /*Proveedor _pasedatos = new Proveedor();
+            _pasedatos.Id = int.Parse(dataGridProv.CurrentRow.Cells[0].Value.ToString());
+            _pasedatos.Nombre = dataGridProv.CurrentRow.Cells[1].Value.ToString(); 
+            _pasedatos.Num_cel = int.Parse(dataGridProv.CurrentRow.Cells[2].Value.ToString());
+            _pasedatos.Nom_dist = dataGridProv.CurrentRow.Cells[3].Value.ToString();
+            _pasedatos.Direccion = dataGridProv.CurrentRow.Cells[4].Value.ToString();*/
+            Proveedor_modificar _pasedatos = new Proveedor_modificar();
+            _pasedatos.Id = int.Parse(dataGridProv.CurrentRow.Cells[0].Value.ToString());
+            _pasedatos.Nombre = dataGridProv.CurrentRow.Cells[1].Value.ToString();
+            _pasedatos.Num_cel = int.Parse(dataGridProv.CurrentRow.Cells[2].Value.ToString());
+            _pasedatos.nom_dist = dataGridProv.CurrentRow.Cells[3].Value.ToString();
+            _pasedatos.direccion = dataGridProv.CurrentRow.Cells[4].Value.ToString();
+            u_proveedor u_prov = new u_proveedor(_pasedatos);
             u_prov.ShowDialog();
+            CargarData(null);
         }
 
         private void button3prov_Click(object sender, EventArgs e)
@@ -115,8 +132,7 @@ namespace tp_integrador_GUI.proveedores
                 int id = int.Parse(dataGridProv.CurrentRow.Cells[0].Value.ToString());
                 menu_proveedores _menu_prov = new menu_proveedores();
                 _menu_prov.EliminarData(id);
-                _menu_prov.CargarData(null);
-                
+                CargarData(null);
             }
         }
     }

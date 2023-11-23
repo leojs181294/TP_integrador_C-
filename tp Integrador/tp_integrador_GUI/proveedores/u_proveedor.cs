@@ -14,11 +14,17 @@ namespace tp_integrador_GUI
 {
     public partial class u_proveedor : Form
     {
-        public u_proveedor()
+        Proveedor_modificar _info = new Proveedor_modificar();
+        public u_proveedor(Proveedor_modificar info)
         {
             InitializeComponent();
-        }
+            _info = info;
+            txtProv1.Text = _info.Nombre;
+            txtProv2.Text = _info.Num_cel.ToString();
+            txtProv3.Text = _info.nom_dist;
+            txtProv4.Text = _info.direccion;
 
+        }
         private void Form3_Load(object sender, EventArgs e)
         {
 
@@ -38,7 +44,7 @@ namespace tp_integrador_GUI
             _proveedor.Direccion = txtProv4.Text;
 
 
-            string sql = "INSERT INTO proveedor(nombre_proveedor, cel_prov, nom_distribuidora, direccion_prov) VALUES ('" + _proveedor.Nombre + "', '" + _proveedor.Num_cel + "',  '" + _proveedor.Nom_dist + "', '" + _proveedor.Direccion + "')";
+            string sql = "UPDATE proveedor SET nombre_proveedor='"+ _proveedor.Nombre +"'" +", cel_prov='"+_proveedor.Num_cel+"', nom_distribuidora='" + _proveedor.Nom_dist+"', direccion_prov='"+_proveedor.Direccion+"' WHERE id_proveedor='"+ _info.Id +"'";
             MySqlConnection conexionDB = Conexion.Conectar();
             conexionDB.Open();
 
@@ -46,7 +52,7 @@ namespace tp_integrador_GUI
             {
                 MySqlCommand comando = new MySqlCommand(sql, conexionDB);
                 comando.ExecuteNonQuery();
-                MessageBox.Show("Registro guardado");
+                MessageBox.Show("Registro actualizado");
             }
             catch (MySqlException ex)
             {
@@ -62,7 +68,6 @@ namespace tp_integrador_GUI
         {
 
         }
-
         private void txtProv1_TextChanged(object sender, EventArgs e)
         {
 
