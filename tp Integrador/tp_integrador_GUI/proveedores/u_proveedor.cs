@@ -14,8 +14,8 @@ namespace tp_integrador_GUI
 {
     public partial class u_proveedor : Form
     {
-        Proveedor_modificar _info = new Proveedor_modificar();
-        public u_proveedor(Proveedor_modificar info)
+        Proveedor _info = new Proveedor();
+        public u_proveedor(Proveedor info)
         {
             InitializeComponent();
             _info = info;

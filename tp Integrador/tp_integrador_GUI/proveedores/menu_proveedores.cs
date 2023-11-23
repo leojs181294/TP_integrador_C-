@@ -34,7 +34,7 @@ namespace tp_integrador_GUI.proveedores
                 }
                 else
                 {
-                    sql = "SELECT id_proveedor, nombre_proveedor, cel_prov, nom_distribuidora, direccion_prov FROM proveedor WHERE nombre_proveedor LIKE '%" + dato + "%' OR nom_distribuidora LIKE '%" + dato + "%' ORDER BY nombre_proveedor ASC";
+                    sql = "SELECT id_proveedor, nombre_proveedor, cel_prov, nom_distribuidora, direccion_prov FROM proveedor WHERE nombre_proveedor LIKE '%" + dato + "%' OR nom_distribuidora LIKE '%" + dato + "%' ORDER BY id_proveedor DESC";
                 }
                 try
                 {
@@ -106,13 +106,7 @@ namespace tp_integrador_GUI.proveedores
         public void button2prov_Click(object sender, EventArgs e)
         {
 
-            /*Proveedor _pasedatos = new Proveedor();
-            _pasedatos.Id = int.Parse(dataGridProv.CurrentRow.Cells[0].Value.ToString());
-            _pasedatos.Nombre = dataGridProv.CurrentRow.Cells[1].Value.ToString(); 
-            _pasedatos.Num_cel = int.Parse(dataGridProv.CurrentRow.Cells[2].Value.ToString());
-            _pasedatos.Nom_dist = dataGridProv.CurrentRow.Cells[3].Value.ToString();
-            _pasedatos.Direccion = dataGridProv.CurrentRow.Cells[4].Value.ToString();*/
-            Proveedor_modificar _pasedatos = new Proveedor_modificar();
+            Proveedor _pasedatos = new Proveedor();
             _pasedatos.Id = int.Parse(dataGridProv.CurrentRow.Cells[0].Value.ToString());
             _pasedatos.Nombre = dataGridProv.CurrentRow.Cells[1].Value.ToString();
             _pasedatos.Num_cel = int.Parse(dataGridProv.CurrentRow.Cells[2].Value.ToString());

@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace tp_integrador_GUI.proveedores
 {
-     class Proveedor
+     public class Proveedor
     {
-            int id;
-            string nombre;
-            int num_cel;
-            string nom_dist;
-            string direccion;
+            public int id;
+            public string nombre;
+            public int num_cel;
+            public string nom_dist;
+            public string direccion;
 
         public int Id { get => id; set => id = value; }
         public string Nombre { get => nombre; set => nombre = value; }
