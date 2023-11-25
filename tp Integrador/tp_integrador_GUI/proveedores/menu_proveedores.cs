@@ -19,7 +19,6 @@ namespace tp_integrador_GUI.proveedores
             CargarData(null);
         }
 
-        public static DataGridViewRow selectedrow;
         class CtrProveedores
         {
             public List<object> consulta(string dato)
@@ -74,7 +73,7 @@ namespace tp_integrador_GUI.proveedores
         public void EliminarData(int id)
         {
 
-            string sql = "DELETE FROM proveedor WHERE id_proveedor= '"+id +"'";
+            string sql = "DELETE FROM proveedor WHERE id_proveedor= '" + id + "'";
             MySqlConnection conexionDB = Conexion.Conectar();
             conexionDB.Open();
 
@@ -82,11 +81,11 @@ namespace tp_integrador_GUI.proveedores
             {
                 MySqlCommand comando = new MySqlCommand(sql, conexionDB);
                 comando.ExecuteNonQuery();
-                MessageBox.Show("Registro guardado");
+                MessageBox.Show("Registro Eliminado");
             }
             catch (MySqlException ex)
             {
-                MessageBox.Show("error al guardar: " + ex.Message);
+                MessageBox.Show("error al eliminar: " + ex.Message);
             }
             finally
             {
@@ -121,7 +120,7 @@ namespace tp_integrador_GUI.proveedores
         {
             //Este boton es para eliminar brotherrr
             DialogResult confirmacion = MessageBox.Show("Seguro que quiere eliminar este registro?", "Salir", MessageBoxButtons.YesNoCancel);
-            if(confirmacion == DialogResult.Yes)
+            if (confirmacion == DialogResult.Yes)
             {
                 int id = int.Parse(dataGridProv.CurrentRow.Cells[0].Value.ToString());
                 menu_proveedores _menu_prov = new menu_proveedores();

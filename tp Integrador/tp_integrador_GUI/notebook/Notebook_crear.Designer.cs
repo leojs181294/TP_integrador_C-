@@ -157,6 +157,7 @@
             txt_sist_op.Name = "txt_sist_op";
             txt_sist_op.Size = new Size(211, 28);
             txt_sist_op.TabIndex = 39;
+            txt_sist_op.SelectedIndexChanged += txt_sist_op_SelectedIndexChanged;
             // 
             // txt_ram
             // 
@@ -360,14 +361,15 @@
             label1.TabIndex = 0;
             label1.Text = "Marca:";
             // 
-            // notebook
+            // Notebook_crear
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(groupBox1);
-            Name = "notebook";
+            Name = "Notebook_crear";
             Text = "notebook";
+            Load += Notebook_crear_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)txt_ram).EndInit();

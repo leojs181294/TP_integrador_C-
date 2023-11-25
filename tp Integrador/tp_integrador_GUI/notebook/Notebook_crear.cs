@@ -36,48 +36,30 @@ namespace tp_integrador_GUI
         private void btn_guardar_Click(object sender, EventArgs e)
         {
             Notebook notebook = new Notebook();
-
-            string marca = txt_marca.Text;
-            string modelo = txt_modelo.Text;
-            string sist_operativo = txt_sist_op.Text;
-            string procesador = txt_procesador.Text;
-            int nucleos = int.Parse(txt_nucleos.Text);
-            float velocidad_procesadora = float.Parse(txt_vel_cpu.Text);
-            int memoria_ram = int.Parse(txt_ram.Text);
-            int hdd = int.Parse(txt_hdd.Text);
-            int ssd = int.Parse(txt_ssd.Text);
-            int memoria_video = int.Parse(txt_mem_video.Text);
-            int puertos_usb = int.Parse(txt_usb.Text);
-            int red_rj45;
+            notebook.Marca = txt_marca.Text;
+            notebook.Modelo = txt_modelo.Text;
+            notebook.Sis_operativo = txt_sist_op.Text;
+            notebook.Procesador = txt_procesador.Text;
+            notebook.Nucleos = int.Parse(txt_nucleos.Text);
+            notebook.Velocidad_procesadora = float.Parse(txt_vel_cpu.Text);
+            notebook.Memoria_ram = int.Parse(txt_ram.Text);
+            notebook.Hdd = int.Parse(txt_hdd.Text);
+            notebook.Ssd = int.Parse(txt_ssd.Text);
+            notebook.Memoria_video = int.Parse(txt_mem_video.Text);
+            notebook.Puertos_usb = int.Parse(txt_usb.Text);
             if (txt_red_rj45.Text == "Si")
             {
-                red_rj45 = 1;
+                notebook.Red_rj45 = 1;
             }
             else
             {
-                red_rj45 = 0;
+                notebook.Red_rj45 = 0;
             }
-            long precio_unitario = int.Parse(txt_precio.Text);
-            int stock = int.Parse(txt_stock.Text);
-            long stock_valorizado = stock * precio_unitario;
+            notebook.Precio_unitario = int.Parse(txt_precio.Text);
+            notebook.Stock = int.Parse(txt_stock.Text);
+            notebook.Stock_valorizado = notebook.Stock * notebook.Precio_unitario;
 
-            notebook.SetMarca(marca);
-            notebook.SetModelo(modelo);
-            notebook.Setsist_operativo(sist_operativo);
-            notebook.SetProcesador(procesador);
-            notebook.SetNucleos(nucleos);
-            notebook.Setvelocidad_procesadora(velocidad_procesadora);
-            notebook.Setmemoria_ram(memoria_ram);
-            notebook.Sethdd(hdd);
-            notebook.Setssd(ssd);
-            notebook.Setmemoria_video(memoria_video);
-            notebook.Setpuertos_usb(puertos_usb);
-            notebook.Setred_rj45(red_rj45);
-            notebook.Setprecio_unitario(precio_unitario);
-            notebook.Setstock(stock);
-            notebook.Setstock_valorizado(stock_valorizado);
-
-            string sql = "INSERT INTO notebook(marca, modelo, precio_unitario, stock_valorizado, stock, procesador, veloc_cpu, nucleos, mem_video, sis_operativo, hdd, ssd, puertos_usb, red_rj45)" + " VALUES ('" + marca + "', '" + modelo + "',  '" + precio_unitario + "', '" + stock_valorizado + "', '" + stock + "', '" + procesador + "', '" + velocidad_procesadora + "', '" + nucleos + "', '" + memoria_video + "', '" + sist_operativo + "', '" + hdd + "', '" + ssd + "', '" + puertos_usb + "', '" + red_rj45 + "')";
+            string sql = "INSERT INTO notebook(marca,modelo,precio_unitario,stock_valorizado,stock,procesador,veloc_cpu,nucleos,mem_video,sis_operativo,hdd,ssd,puertos_usb,red_rj45,memoria_ram)" + " VALUES ('" + notebook.Marca + "','" + notebook.Modelo + "','" + notebook.Precio_unitario + "','" + notebook.Stock_valorizado + "','" + notebook.Stock + "','" + notebook.Procesador + "','" + notebook.Velocidad_procesadora + "','" + notebook.Nucleos + "','" + notebook.Memoria_video + "','" + notebook.Sis_operativo + "','" + notebook.Hdd + "','" + notebook.Ssd + "','" + notebook.Puertos_usb + "','" + notebook.Red_rj45 + "','" + notebook.Memoria_ram + "')";
             MySqlConnection conexionDB = Conexion.Conectar();
             conexionDB.Open();
 
@@ -96,6 +78,16 @@ namespace tp_integrador_GUI
             {
                 conexionDB.Close();
             }
+        }
+
+        private void Notebook_crear_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_sist_op_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
