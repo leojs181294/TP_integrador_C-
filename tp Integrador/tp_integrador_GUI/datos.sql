@@ -102,6 +102,7 @@ CREATE TABLE `notebook` (
   `ssd` int NOT NULL,
   `puertos_usb` int NOT NULL,
   `red_rj45` tinyint NOT NULL,
+  `memoria_ram` int NOT NULL,
   PRIMARY KEY (`id_notebook`),
   UNIQUE KEY `idnotebook_UNIQUE` (`id_notebook`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='Aqui se guardan las notebooks';
@@ -161,7 +162,7 @@ CREATE TABLE `proveedor` (
   `direccion_prov` varchar(45) NOT NULL,
   PRIMARY KEY (`id_proveedor`),
   UNIQUE KEY `idproveedor_UNIQUE` (`id_proveedor`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -218,4 +219,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-11-12 17:26:04
+-- Dump completed on 2023-11-24 22:38:08

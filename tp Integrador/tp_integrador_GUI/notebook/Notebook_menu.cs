@@ -36,11 +36,11 @@ namespace tp_integrador_GUI
                 string sql;
                 if (dato == null)
                 {
-                    sql = "SELECT id_notebook, marca, modelo, sist_operativo, procesador, nucleos, velocidad_procesadora, memoria_ram, hdd, ssd, memoria_video, puertos_usb, red_rj45, precio_unitario, stock, stock_valorizado FROM notebook ORDER BY marca ASC";
+                    sql = "SELECT id_notebook, marca, modelo, sis_operativo, procesador, nucleos, veloc_cpu, memoria_ram, hdd, ssd, mem_video, puertos_usb, red_rj45, precio_unitario, stock, stock_valorizado FROM notebook ORDER BY marca ASC";
                 }
                 else
                 {
-                    sql = "SELECT id_notebook, marca, modelo, sist_operativo, procesador, nucleos, velocidad_procesadora, memoria_ram, hdd, ssd, memoria_video, puertos_usb, red_rj45, precio_unitario, stock, stock_valorizado FROM notebook WHERE marca LIKE '%" + dato + "%' OR marca LIKE '%" + dato + "%' ORDER BY id_notebook DESC";
+                    sql = "SELECT id_notebook, marca, modelo, sis_operativo, procesador, nucleos, veloc_cpu, memoria_ram, hdd, ssd, mem_video, puertos_usb, red_rj45, precio_unitario, stock, stock_valorizado FROM notebook WHERE marca LIKE '%" + dato + "%' OR marca LIKE '%" + dato + "%' ORDER BY id_notebook DESC";
                 }
                 try
                 {
