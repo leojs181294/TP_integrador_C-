@@ -134,5 +134,10 @@ namespace tp_integrador_GUI.proveedores
                 CargarData(null);
             }
         }
+
+        private void menu_proveedores_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

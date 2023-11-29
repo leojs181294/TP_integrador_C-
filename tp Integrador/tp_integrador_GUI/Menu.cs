@@ -39,5 +39,16 @@ namespace tp_integrador_GUI
             notebook_menu fnotebook = new notebook_menu();
             fnotebook.ShowDialog();
         }
+
+        private void boton_salida_Click(object sender, EventArgs e)
+        {
+            DialogResult = MessageBox.Show("Decea salir?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (DialogResult == DialogResult.Yes)
+            {
+                this.Close();
+                System.Windows.Forms.Application.Exit();
+            }
+
+        }
     }
 }

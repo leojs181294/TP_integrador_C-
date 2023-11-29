@@ -68,6 +68,7 @@ namespace tp_integrador_GUI
             finally
             {
                 conexionDB.Close();
+                this.Hide();
             }
         }
 

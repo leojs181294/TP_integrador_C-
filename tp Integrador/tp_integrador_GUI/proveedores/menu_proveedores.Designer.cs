@@ -41,21 +41,19 @@
             // 
             dataGridProv.BackgroundColor = Color.White;
             dataGridProv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridProv.Location = new Point(14, 101);
-            dataGridProv.Margin = new Padding(3, 4, 3, 4);
+            dataGridProv.Location = new Point(12, 76);
             dataGridProv.Name = "dataGridProv";
             dataGridProv.RowHeadersWidth = 51;
             dataGridProv.RowTemplate.Height = 25;
-            dataGridProv.Size = new Size(887, 439);
+            dataGridProv.Size = new Size(776, 329);
             dataGridProv.TabIndex = 0;
             dataGridProv.CellContentClick += dataGridProv_CellContentClick;
             // 
             // button1prov
             // 
-            button1prov.Location = new Point(49, 548);
-            button1prov.Margin = new Padding(3, 4, 3, 4);
+            button1prov.Location = new Point(43, 411);
             button1prov.Name = "button1prov";
-            button1prov.Size = new Size(149, 41);
+            button1prov.Size = new Size(130, 31);
             button1prov.TabIndex = 1;
             button1prov.Text = "Crear";
             button1prov.UseVisualStyleBackColor = true;
@@ -63,10 +61,9 @@
             // 
             // button2prov
             // 
-            button2prov.Location = new Point(384, 548);
-            button2prov.Margin = new Padding(3, 4, 3, 4);
+            button2prov.Location = new Point(336, 411);
             button2prov.Name = "button2prov";
-            button2prov.Size = new Size(149, 41);
+            button2prov.Size = new Size(130, 31);
             button2prov.TabIndex = 2;
             button2prov.Text = "Modificar";
             button2prov.UseVisualStyleBackColor = true;
@@ -74,10 +71,9 @@
             // 
             // button3prov
             // 
-            button3prov.Location = new Point(717, 548);
-            button3prov.Margin = new Padding(3, 4, 3, 4);
+            button3prov.Location = new Point(627, 411);
             button3prov.Name = "button3prov";
-            button3prov.Size = new Size(149, 41);
+            button3prov.Size = new Size(130, 31);
             button3prov.TabIndex = 3;
             button3prov.Text = "Eliminar";
             button3prov.UseVisualStyleBackColor = true;
@@ -85,36 +81,34 @@
             // 
             // button4prov
             // 
-            button4prov.Location = new Point(688, 29);
-            button4prov.Margin = new Padding(3, 4, 3, 4);
+            button4prov.Location = new Point(682, 21);
             button4prov.Name = "button4prov";
-            button4prov.Size = new Size(86, 31);
+            button4prov.Size = new Size(75, 23);
             button4prov.TabIndex = 5;
             button4prov.Text = "Buscar";
             button4prov.UseVisualStyleBackColor = true;
             // 
             // textBox1prov
             // 
-            textBox1prov.Location = new Point(539, 29);
-            textBox1prov.Margin = new Padding(3, 4, 3, 4);
+            textBox1prov.Location = new Point(523, 21);
             textBox1prov.Name = "textBox1prov";
-            textBox1prov.Size = new Size(141, 27);
+            textBox1prov.Size = new Size(153, 23);
             textBox1prov.TabIndex = 6;
             // 
             // menu_proveedores
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(914, 600);
+            ClientSize = new Size(800, 450);
             Controls.Add(textBox1prov);
             Controls.Add(button4prov);
             Controls.Add(button3prov);
             Controls.Add(button2prov);
             Controls.Add(button1prov);
             Controls.Add(dataGridProv);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "menu_proveedores";
             Text = "Menu de proveedores";
+            Load += menu_proveedores_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridProv).EndInit();
             ResumeLayout(false);
             PerformLayout();
