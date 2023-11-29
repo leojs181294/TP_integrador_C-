@@ -98,7 +98,13 @@ namespace tp_integrador_GUI.proveedores
         }
         private void button1prov_Click(object sender, EventArgs e)
         {
-            c_proveedor c_prov = new c_proveedor();
+            Proveedor vacio = new Proveedor();
+            vacio.id = 0;
+            vacio.Nombre = "";
+            vacio.num_cel = 0;
+            vacio.nom_dist = "";
+            vacio.direccion = "";
+            c_proveedor c_prov = new c_proveedor(vacio);
             c_prov.ShowDialog();
             CargarData(null);
         }
@@ -111,7 +117,7 @@ namespace tp_integrador_GUI.proveedores
             _pasedatos.Num_cel = int.Parse(dataGridProv.CurrentRow.Cells[2].Value.ToString());
             _pasedatos.nom_dist = dataGridProv.CurrentRow.Cells[3].Value.ToString();
             _pasedatos.direccion = dataGridProv.CurrentRow.Cells[4].Value.ToString();
-            u_proveedor u_prov = new u_proveedor(_pasedatos);
+            c_proveedor u_prov = new c_proveedor(_pasedatos);
             u_prov.ShowDialog();
             CargarData(null);
         }

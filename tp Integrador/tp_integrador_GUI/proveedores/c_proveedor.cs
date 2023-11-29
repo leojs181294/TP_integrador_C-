@@ -14,9 +14,15 @@ namespace tp_integrador_GUI
 {
     public partial class c_proveedor : Form
     {
-        public c_proveedor()
+        Proveedor _info = new Proveedor();
+        public c_proveedor(Proveedor info)
         {
             InitializeComponent();
+            _info = info;
+            txtProv1.Text = _info.Nombre;
+            txtProv2.Text = _info.Num_cel.ToString();
+            txtProv3.Text = _info.nom_dist;
+            txtProv4.Text = _info.direccion;
         }
 
         private void Form3_Load(object sender, EventArgs e)
@@ -36,9 +42,16 @@ namespace tp_integrador_GUI
             _proveedor.Num_cel = int.Parse(txtProv2.Text);
             _proveedor.Nom_dist = txtProv3.Text;
             _proveedor.Direccion = txtProv4.Text;
+            string sql;
 
-
-            string sql = "INSERT INTO proveedor(nombre_proveedor, cel_prov, nom_distribuidora, direccion_prov) VALUES ('" + _proveedor.Nombre + "', '" + _proveedor.Num_cel + "',  '" + _proveedor.Nom_dist + "', '" + _proveedor.Direccion + "')";
+            if (_info.id == 0)
+            {
+                sql = "INSERT INTO proveedor(nombre_proveedor, cel_prov, nom_distribuidora, direccion_prov) VALUES ('" + _proveedor.Nombre + "', '" + _proveedor.Num_cel + "',  '" + _proveedor.Nom_dist + "', '" + _proveedor.Direccion + "')";
+            }
+            else
+            {
+                sql = "UPDATE proveedor SET nombre_proveedor='" + _proveedor.Nombre + "'" + ", cel_prov='" + _proveedor.Num_cel + "', nom_distribuidora='" + _proveedor.Nom_dist + "', direccion_prov='" + _proveedor.Direccion + "' WHERE id_proveedor='" + _info.Id + "'";
+            }
             MySqlConnection conexionDB = Conexion.Conectar();
             conexionDB.Open();
 
