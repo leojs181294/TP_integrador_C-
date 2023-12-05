@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace tp_integrador_GUI.notebook
 {
-    internal class Notebook
+    //Para poder pasar un objeto entre un form y otro la clase tiene que ser publica
+    public class Notebook
     {
         private int id_notebook;
         private string marca;

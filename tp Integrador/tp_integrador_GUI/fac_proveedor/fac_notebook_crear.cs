@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using tp_integrador_GUI.conexion;
 using tp_integrador_GUI.fac_notebook;
 using tp_integrador_GUI.proveedores;
 

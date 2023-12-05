@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using tp_integrador_GUI.conexion;
 using tp_integrador_GUI.notebook;
 
 namespace tp_integrador_GUI
@@ -15,7 +16,7 @@ namespace tp_integrador_GUI
     public partial class Notebook_crear : Form
     {
         Notebook notebook = new Notebook();
-       /* public Notebook_crear(Notebook notdatos)
+        public Notebook_crear(Notebook notdatos)
         {
             InitializeComponent();
 
@@ -41,7 +42,7 @@ namespace tp_integrador_GUI
             }
             txt_precio.Text = notebook.Precio_unitario.ToString();
             txt_stock.Text = notebook.Stock.ToString();
-        }*/
+        }
         private void btn_cancelar_Click(object sender, EventArgs e)
         {
             DialogResult = MessageBox.Show("Decea salir?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
