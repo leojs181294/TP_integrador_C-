@@ -114,7 +114,7 @@
             btn_cancelar.Location = new Point(30, 368);
             btn_cancelar.Name = "btn_cancelar";
             btn_cancelar.Size = new Size(180, 29);
-            btn_cancelar.TabIndex = 44;
+            btn_cancelar.TabIndex = 16;
             btn_cancelar.Text = "Cancelar";
             btn_cancelar.UseVisualStyleBackColor = false;
             btn_cancelar.Click += btn_cancelar_Click;
@@ -124,21 +124,21 @@
             txt_precio.Location = new Point(547, 278);
             txt_precio.Name = "txt_precio";
             txt_precio.Size = new Size(211, 27);
-            txt_precio.TabIndex = 43;
+            txt_precio.TabIndex = 14;
             // 
             // txt_stock
             // 
             txt_stock.Location = new Point(547, 237);
             txt_stock.Name = "txt_stock";
             txt_stock.Size = new Size(211, 27);
-            txt_stock.TabIndex = 42;
+            txt_stock.TabIndex = 12;
             // 
             // txt_vel_cpu
             // 
             txt_vel_cpu.Location = new Point(164, 184);
             txt_vel_cpu.Name = "txt_vel_cpu";
             txt_vel_cpu.Size = new Size(211, 27);
-            txt_vel_cpu.TabIndex = 41;
+            txt_vel_cpu.TabIndex = 9;
             // 
             // txt_red_rj45
             // 
@@ -147,7 +147,7 @@
             txt_red_rj45.Location = new Point(164, 95);
             txt_red_rj45.Name = "txt_red_rj45";
             txt_red_rj45.Size = new Size(211, 28);
-            txt_red_rj45.TabIndex = 40;
+            txt_red_rj45.TabIndex = 5;
             // 
             // txt_sist_op
             // 
@@ -156,71 +156,77 @@
             txt_sist_op.Location = new Point(164, 51);
             txt_sist_op.Name = "txt_sist_op";
             txt_sist_op.Size = new Size(211, 28);
-            txt_sist_op.TabIndex = 39;
+            txt_sist_op.TabIndex = 3;
             txt_sist_op.SelectedIndexChanged += txt_sist_op_SelectedIndexChanged;
             // 
             // txt_ram
             // 
             txt_ram.Location = new Point(547, 96);
+            txt_ram.Maximum = new decimal(new int[] { 256, 0, 0, 0 });
             txt_ram.Name = "txt_ram";
             txt_ram.Size = new Size(211, 27);
-            txt_ram.TabIndex = 36;
+            txt_ram.TabIndex = 6;
+            txt_ram.ThousandsSeparator = true;
             // 
             // txt_ssd
             // 
             txt_ssd.Location = new Point(547, 138);
+            txt_ssd.Maximum = new decimal(new int[] { 100000, 0, 0, 0 });
             txt_ssd.Name = "txt_ssd";
             txt_ssd.Size = new Size(211, 27);
-            txt_ssd.TabIndex = 35;
+            txt_ssd.TabIndex = 8;
             // 
             // txt_mem_video
             // 
             txt_mem_video.Location = new Point(164, 237);
+            txt_mem_video.Maximum = new decimal(new int[] { 10000, 0, 0, 0 });
             txt_mem_video.Name = "txt_mem_video";
             txt_mem_video.Size = new Size(211, 27);
-            txt_mem_video.TabIndex = 34;
+            txt_mem_video.TabIndex = 11;
             // 
             // txt_hdd
             // 
             txt_hdd.Location = new Point(547, 184);
+            txt_hdd.Maximum = new decimal(new int[] { 100000, 0, 0, 0 });
             txt_hdd.Name = "txt_hdd";
             txt_hdd.Size = new Size(211, 27);
-            txt_hdd.TabIndex = 33;
+            txt_hdd.TabIndex = 10;
             // 
             // txt_nucleos
             // 
             txt_nucleos.Location = new Point(164, 138);
             txt_nucleos.Name = "txt_nucleos";
             txt_nucleos.Size = new Size(211, 27);
-            txt_nucleos.TabIndex = 31;
+            txt_nucleos.TabIndex = 7;
             // 
             // txt_usb
             // 
             txt_usb.Location = new Point(164, 278);
+            txt_usb.Maximum = new decimal(new int[] { 10, 0, 0, 0 });
             txt_usb.Name = "txt_usb";
             txt_usb.Size = new Size(211, 27);
-            txt_usb.TabIndex = 29;
+            txt_usb.TabIndex = 13;
             // 
             // txt_procesador
             // 
             txt_procesador.Location = new Point(547, 51);
             txt_procesador.Name = "txt_procesador";
             txt_procesador.Size = new Size(211, 27);
-            txt_procesador.TabIndex = 17;
+            txt_procesador.TabIndex = 4;
             // 
             // txt_modelo
             // 
             txt_modelo.Location = new Point(547, 16);
             txt_modelo.Name = "txt_modelo";
             txt_modelo.Size = new Size(211, 27);
-            txt_modelo.TabIndex = 16;
+            txt_modelo.TabIndex = 2;
             // 
             // txt_marca
             // 
             txt_marca.Location = new Point(164, 16);
             txt_marca.Name = "txt_marca";
             txt_marca.Size = new Size(211, 27);
-            txt_marca.TabIndex = 15;
+            txt_marca.TabIndex = 1;
             // 
             // btn_guardar
             // 
@@ -229,7 +235,7 @@
             btn_guardar.Location = new Point(578, 368);
             btn_guardar.Name = "btn_guardar";
             btn_guardar.Size = new Size(180, 29);
-            btn_guardar.TabIndex = 14;
+            btn_guardar.TabIndex = 15;
             btn_guardar.Text = "Guardar";
             btn_guardar.UseVisualStyleBackColor = false;
             btn_guardar.Click += btn_guardar_Click;
