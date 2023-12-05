@@ -31,14 +31,14 @@
             components = new System.ComponentModel.Container();
             btn_crear = new Button();
             label1 = new Label();
-            textBox1 = new TextBox();
-            datos_notebook = new DataGridView();
+            txt_buscar_dato = new TextBox();
+            dataGrid_notebook = new DataGridView();
             proveedorBindingSource = new BindingSource(components);
             btn_modificar = new Button();
             btn_eliminar = new Button();
             btnBuscar = new Button();
             opc_buscar = new ComboBox();
-            ((System.ComponentModel.ISupportInitialize)datos_notebook).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGrid_notebook).BeginInit();
             ((System.ComponentModel.ISupportInitialize)proveedorBindingSource).BeginInit();
             SuspendLayout();
             // 
@@ -62,23 +62,23 @@
             label1.TabIndex = 41;
             label1.Text = "Buscar por:";
             // 
-            // textBox1
+            // txt_buscar_dato
             // 
-            textBox1.Location = new Point(336, 11);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(304, 27);
-            textBox1.TabIndex = 43;
+            txt_buscar_dato.Location = new Point(336, 11);
+            txt_buscar_dato.Name = "txt_buscar_dato";
+            txt_buscar_dato.Size = new Size(304, 27);
+            txt_buscar_dato.TabIndex = 43;
             // 
-            // datos_notebook
+            // dataGrid_notebook
             // 
-            datos_notebook.BackgroundColor = Color.White;
-            datos_notebook.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            datos_notebook.Location = new Point(11, 45);
-            datos_notebook.Name = "datos_notebook";
-            datos_notebook.RowHeadersWidth = 51;
-            datos_notebook.RowTemplate.Height = 29;
-            datos_notebook.Size = new Size(851, 419);
-            datos_notebook.TabIndex = 47;
+            dataGrid_notebook.BackgroundColor = Color.White;
+            dataGrid_notebook.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGrid_notebook.Location = new Point(11, 45);
+            dataGrid_notebook.Name = "dataGrid_notebook";
+            dataGrid_notebook.RowHeadersWidth = 51;
+            dataGrid_notebook.RowTemplate.Height = 29;
+            dataGrid_notebook.Size = new Size(851, 419);
+            dataGrid_notebook.TabIndex = 47;
             // 
             // btn_modificar
             // 
@@ -131,13 +131,14 @@
             Controls.Add(btnBuscar);
             Controls.Add(btn_eliminar);
             Controls.Add(btn_modificar);
-            Controls.Add(datos_notebook);
-            Controls.Add(textBox1);
+            Controls.Add(dataGrid_notebook);
+            Controls.Add(txt_buscar_dato);
             Controls.Add(label1);
             Controls.Add(btn_crear);
             Name = "notebook_menu";
             Text = "menu notebook";
-            ((System.ComponentModel.ISupportInitialize)datos_notebook).EndInit();
+            Load += notebook_menu_Load;
+            ((System.ComponentModel.ISupportInitialize)dataGrid_notebook).EndInit();
             ((System.ComponentModel.ISupportInitialize)proveedorBindingSource).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -147,8 +148,8 @@
 
         private Button btn_crear;
         private Label label1;
-        private TextBox textBox1;
-        private DataGridView datos_notebook;
+        private TextBox txt_buscar_dato;
+        private DataGridView dataGrid_notebook;
         private Button btn_modificar;
         private Button btn_eliminar;
         private BindingSource proveedorBindingSource;

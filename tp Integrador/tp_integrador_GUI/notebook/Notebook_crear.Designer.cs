@@ -356,7 +356,6 @@
             label2.Size = new Size(64, 20);
             label2.TabIndex = 1;
             label2.Text = "Modelo:";
-            label2.Click += label2_Click;
             // 
             // label1
             // 

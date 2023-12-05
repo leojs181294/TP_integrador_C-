@@ -101,7 +101,6 @@ C:\Users\leojs\Source\Repos\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj
 C:\Users\leojs\Source\Repos\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.notebook_menu.resources
 C:\Users\leojs\Source\Repos\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.c_proveedor.resources
 C:\Users\leojs\Source\Repos\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.proveedores.menu_proveedores.resources
-C:\Users\leojs\Source\Repos\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.u_proveedor.resources
 C:\Users\leojs\Source\Repos\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.csproj.GenerateResource.cache
 C:\Users\leojs\Source\Repos\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\leojs\Source\Repos\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.AssemblyInfoInputs.cache
@@ -113,3 +112,7 @@ C:\Users\leojs\Source\Repos\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj
 C:\Users\leojs\Source\Repos\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.pdb
 C:\Users\leojs\Source\Repos\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.genruntimeconfig.cache
 C:\Users\leojs\Source\Repos\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\ref\tp_integrador_GUI.dll
+C:\Users\leojs\source\Repos\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.sourcelink.json
+C:\Users\leojs\source\Repos\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.fac_notebook_crear.resources
+C:\Users\leojs\source\Repos\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.fac_proveedores_menu.resources
+C:\Users\leojs\source\Repos\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.fac_proveedor_crear.resources

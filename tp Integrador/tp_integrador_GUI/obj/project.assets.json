@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\leojs\\Source\\Repos\\TP_integrador_C-\\tp Integrador\\tp_integrador_GUI\\tp_integrador_GUI.csproj",
+      "projectUniqueName": "C:\\Users\\leojs\\source\\Repos\\TP_integrador_C-\\tp Integrador\\tp_integrador_GUI\\tp_integrador_GUI.csproj",
       "projectName": "tp_integrador_GUI",
-      "projectPath": "C:\\Users\\leojs\\Source\\Repos\\TP_integrador_C-\\tp Integrador\\tp_integrador_GUI\\tp_integrador_GUI.csproj",
+      "projectPath": "C:\\Users\\leojs\\source\\Repos\\TP_integrador_C-\\tp Integrador\\tp_integrador_GUI\\tp_integrador_GUI.csproj",
       "packagesPath": "C:\\Users\\leojs\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\leojs\\Source\\Repos\\TP_integrador_C-\\tp Integrador\\tp_integrador_GUI\\obj\\",
+      "outputPath": "C:\\Users\\leojs\\source\\Repos\\TP_integrador_C-\\tp Integrador\\tp_integrador_GUI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -70,7 +70,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

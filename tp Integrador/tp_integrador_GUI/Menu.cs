@@ -50,5 +50,11 @@ namespace tp_integrador_GUI
             }
 
         }
+
+        private void btn_fac_proveedor_Click(object sender, EventArgs e)
+        {
+            fac_proveedores_menu nueva_fac = new fac_proveedores_menu();
+            nueva_fac.ShowDialog();
+        }
     }
 }

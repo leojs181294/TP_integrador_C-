@@ -14,16 +14,34 @@ namespace tp_integrador_GUI
 {
     public partial class Notebook_crear : Form
     {
-        public Notebook_crear()
+        Notebook notebook = new Notebook();
+       /* public Notebook_crear(Notebook notdatos)
         {
             InitializeComponent();
-        }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
+            notebook = notdatos;
+            txt_marca.Text = notebook.Marca;
+            txt_modelo.Text = notebook.Modelo;
+            txt_sist_op.Text = notebook.Sis_operativo;
+            txt_procesador.Text = notebook.Procesador;
+            txt_nucleos.Text = notebook.Nucleos.ToString();
+            txt_vel_cpu.Text = notebook.Velocidad_procesadora.ToString();
+            txt_ram.Text = notebook.Memoria_ram.ToString();
+            txt_hdd.Text = notebook.Hdd.ToString();
+            txt_ssd.Text = notebook.Ssd.ToString();
+            txt_mem_video.Text = notebook.Memoria_video.ToString();
+            txt_usb.Text = notebook.Puertos_usb.ToString();
+            if (notebook.Red_rj45 == 1)
+            {
+                txt_red_rj45.Text = "Si";
+            }
+            else
+            {
+                txt_red_rj45.Text = "No";
+            }
+            txt_precio.Text = notebook.Precio_unitario.ToString();
+            txt_stock.Text = notebook.Stock.ToString();
+        }*/
         private void btn_cancelar_Click(object sender, EventArgs e)
         {
             DialogResult = MessageBox.Show("Decea salir?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -58,6 +76,7 @@ namespace tp_integrador_GUI
             notebook.Precio_unitario = int.Parse(txt_precio.Text);
             notebook.Stock = int.Parse(txt_stock.Text);
             notebook.Stock_valorizado = notebook.Stock * notebook.Precio_unitario;
+           
 
             string sql = "INSERT INTO notebook(marca,modelo,precio_unitario,stock_valorizado,stock,procesador,veloc_cpu,nucleos,mem_video,sis_operativo,hdd,ssd,puertos_usb,red_rj45,memoria_ram)" + " VALUES ('" + notebook.Marca + "','" + notebook.Modelo + "','" + notebook.Precio_unitario + "','" + notebook.Stock_valorizado + "','" + notebook.Stock + "','" + notebook.Procesador + "','" + notebook.Velocidad_procesadora + "','" + notebook.Nucleos + "','" + notebook.Memoria_video + "','" + notebook.Sis_operativo + "','" + notebook.Hdd + "','" + notebook.Ssd + "','" + notebook.Puertos_usb + "','" + notebook.Red_rj45 + "','" + notebook.Memoria_ram + "')";
             MySqlConnection conexionDB = Conexion.Conectar();

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("tp_integrador_GUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c3d2e29fb1ea48ef2845fee2f82b4dddc6fa00e8")]
 [assembly: System.Reflection.AssemblyProductAttribute("tp_integrador_GUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("tp_integrador_GUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

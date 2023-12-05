@@ -9,14 +9,7 @@ using System.Threading.Tasks;
 
 namespace tp_integrador_GUI
 {
-    /*class Proveedor
-    {
-        public int id_proveedor;
-        public string nom_proveedor;
-        public int cel;
-        public string distribuidora;
-        public string? direccion;
-    }
+    /*
     class Fac_proveedor
     {
         public int id_fac_proveedor;
@@ -31,7 +24,7 @@ namespace tp_integrador_GUI
             double total = 00.00;
            foreach (Fac_noteboock fac_Noteboock in detalle_noteboock)
             {
-                if (fac_Noteboock.fac_proveedor.id_fac_proveedor == id_fac_proveedor)
+                if (fac_Noteboock.fac_notebook.id_fac_proveedor == id_fac_proveedor)
                 {
                     total += fac_Noteboock.getprecio_total();
                 }
@@ -41,20 +34,7 @@ namespace tp_integrador_GUI
         }
 
     }
-    class Fac_noteboock
-    {
-        public int id_fact_noteboock;
-        public int cantidad;
-        public int precio_costo;
-        public Fac_proveedor fac_proveedor;//id_fac_proveedor
-        public Noteboock noteboock;//id_notebook
-
-        //noteboock.setStock=noteboock.getStock+cantidad;
-        public Double getprecio_total()
-        {
-            return cantidad * precio_costo;
-        }
-    }
+    
     class Venta
     {
         public int id_venta;
