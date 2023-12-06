@@ -24,51 +24,44 @@ namespace tp_integrador_GUI
         public notebook_menu()
         {
             InitializeComponent();
-            CargarData(null, null);
+            CargarData();
         }
 
         class CtrNotebook
         {
-            public List<object> consulta(string data, string busqueda)
+            public List<object> consulta(TextBox data, ComboBox opc_buscar)
             {
                 MySqlDataReader lector = null;
                 List<object> listaconsulta = new List<object>();
-                string opc = busqueda;
-                string sql = "";
+                string opc = opc_buscar.Text;
+                string sql = "SELECT id_notebook, marca, modelo, sis_operativo, procesador, nucleos, veloc_cpu, memoria_ram, hdd, ssd, mem_video, puertos_usb, red_rj45, precio_unitario, stock, stock_valorizado FROM notebook ORDER BY id_notebook ASC";
 
-                if (data == null || busqueda == null)
+                switch (opc)
                 {
-                    sql = "SELECT id_notebook, marca, modelo, sis_operativo, procesador, nucleos, veloc_cpu, memoria_ram, hdd, ssd, mem_video, puertos_usb, red_rj45, precio_unitario, stock, stock_valorizado FROM notebook ORDER BY id_notebook ASC";
+                    case "Todo":
+                        {
+                            sql = "SELECT id_notebook, marca, modelo, sis_operativo, procesador, nucleos, veloc_cpu, memoria_ram, hdd, ssd, mem_video, puertos_usb, red_rj45, precio_unitario, stock, stock_valorizado FROM notebook ORDER BY id_notebook ASC";
+                            break;
+                        }
+                    case "Marca":
+                        {
+                            string dato = data.Text;
+                            sql = "SELECT id_notebook, marca, modelo, sis_operativo, procesador, nucleos, veloc_cpu, memoria_ram, hdd, ssd, mem_video, puertos_usb, red_rj45, precio_unitario, stock, stock_valorizado FROM notebook WHERE marca LIKE '%" + dato + "%' ORDER BY marca ASC";
+                            break;
 
+                        }
+                    case "Ram":
+                        {
+                            int dato = int.Parse(data.Text);
+                            sql = "SELECT id_notebook, marca, modelo, sis_operativo, procesador, nucleos, veloc_cpu, memoria_ram, hdd, ssd, mem_video, puertos_usb, red_rj45, precio_unitario, stock, stock_valorizado FROM notebook WHERE memoria_ram LIKE '%" + dato + "%' ORDER BY memoria_ram ASC";
+                            break;
+                        }
+                    default:
+                        {
+                            break;
+                        }
                 }
-                else
-                {
-                    switch (opc)
-                    {
-                        case "todo":
-                            {
-                                sql = "SELECT id_notebook, marca, modelo, sis_operativo, procesador, nucleos, veloc_cpu, memoria_ram, hdd, ssd, mem_video, puertos_usb, red_rj45, precio_unitario, stock, stock_valorizado FROM notebook ORDER BY id_notebook ASC";
-                                break;
-                            }
-                        case "Marca":
-                            {
-                                string dato = data;
-                                sql = "SELECT id_notebook, marca, modelo, sis_operativo, procesador, nucleos, veloc_cpu, memoria_ram, hdd, ssd, mem_video, puertos_usb, red_rj45, precio_unitario, stock, stock_valorizado FROM notebook WHERE marca LIKE '%" + dato + "%' ORDER BY marca ASC";
-                                break;
-
-                            }
-                        case "Ram":
-                            {
-                                int dato = int.Parse(data);
-                                sql = "SELECT id_notebook, marca, modelo, sis_operativo, procesador, nucleos, veloc_cpu, memoria_ram, hdd, ssd, mem_video, puertos_usb, red_rj45, precio_unitario, stock, stock_valorizado FROM notebook WHERE memoria_ram LIKE '%" + dato + "%' ORDER BY memoria_ram ASC";
-                                break;
-                            }
-                        default:
-                            {
-                                break;
-                            }
-                    }
-                }
+                
 
                 try
                 {
@@ -109,11 +102,11 @@ namespace tp_integrador_GUI
                 return listaconsulta;
             }
         }
-        private void CargarData(string data, string busqueda)
+        private void CargarData()
         {
             List<Notebook> lista = new List<Notebook>();
             CtrNotebook _CtrNotebook = new CtrNotebook();
-            dataGrid_notebook.DataSource = _CtrNotebook.consulta(data, busqueda);
+            dataGrid_notebook.DataSource = _CtrNotebook.consulta(txt_buscar_dato, opc_buscar);
         }
         public void EliminarData(int id)
         {
@@ -157,13 +150,12 @@ namespace tp_integrador_GUI
             not_vacia.Stock = 0;
             not_vacia.Stock_valorizado = 0;
             Notebook_crear fnotebook = new Notebook_crear(not_vacia);
-            //Notebook_crear fnotebook = new Notebook_crear();
             fnotebook.ShowDialog();
-            CargarData(null, null);
+            CargarData();
         }
         private void btn_buscar_Click(object sender, EventArgs e)
         {
-            CargarData(null, null);
+            CargarData();
         }
 
         private void btn_eliminar_Click(object sender, EventArgs e)
@@ -175,7 +167,7 @@ namespace tp_integrador_GUI
                 int id = int.Parse(dataGrid_notebook.CurrentRow.Cells[0].Value.ToString());
                 notebook_menu _menu_not = new notebook_menu();
                 _menu_not.EliminarData(id);
-                CargarData(null, null);
+                CargarData();
             }
         }
 
@@ -198,9 +190,8 @@ namespace tp_integrador_GUI
             notdatos.Precio_unitario = long.Parse(dataGrid_notebook.CurrentRow.Cells[13].Value.ToString());
             notdatos.Stock = int.Parse(dataGrid_notebook.CurrentRow.Cells[14].Value.ToString());
             Notebook_crear u_not = new Notebook_crear(notdatos);
-            //Notebook_crear u_not = new Notebook_crear();
             u_not.ShowDialog();
-            CargarData(null, null);
+            CargarData();
         }
 
         private void notebook_menu_Load(object sender, EventArgs e)

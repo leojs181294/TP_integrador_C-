@@ -110,9 +110,5 @@ namespace tp_integrador_GUI
         {
         }
 
-        private void txt_sist_op_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

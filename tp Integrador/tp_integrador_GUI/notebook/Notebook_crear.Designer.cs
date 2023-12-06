@@ -157,7 +157,7 @@
             txt_sist_op.Name = "txt_sist_op";
             txt_sist_op.Size = new Size(211, 28);
             txt_sist_op.TabIndex = 3;
-            txt_sist_op.SelectedIndexChanged += txt_sist_op_SelectedIndexChanged;
+
             // 
             // txt_ram
             // 

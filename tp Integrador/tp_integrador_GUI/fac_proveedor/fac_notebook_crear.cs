@@ -21,7 +21,14 @@ namespace tp_integrador_GUI
         {
             InitializeComponent();
         }
-
+      public void datos()
+        {
+            Fac_notebook fac_Notebook = new Fac_notebook();
+            fac_Notebook.Id_notebook = int.Parse(txt_id_notebook.Text);
+            fac_Notebook.Cantidad = int.Parse(txt_cantidad.Text);
+            fac_Notebook.Precio_costo = float.Parse(txt_precio_unitario.Text);
+            fac_Notebook.Precio_total = fac_Notebook.Precio_costo * fac_Notebook.Cantidad;
+        }
         private void btn_cancelar_Click(object sender, EventArgs e)
         {
             DialogResult = MessageBox.Show("Decea salir?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -34,10 +41,10 @@ namespace tp_integrador_GUI
         private void btn_guardar_Click(object sender, EventArgs e)
         {
             Fac_notebook fac_Notebook = new Fac_notebook();
-            fac_Notebook.id_notebook = int.Parse(txt_id_notebook.Text);
-            fac_Notebook.cantidad = int.Parse(txt_cantidad.Text);
-            fac_Notebook.precio_costo = float.Parse(txt_precio_unitario.Text);
-            string sql = "INSERT INTO fact_notebook(cantidad, id_notebook, precio_costo, precio_total) VALUES ('" + fac_Notebook.cantidad + "', '" + fac_Notebook.id_notebook + "',  '" + fac_Notebook.precio_costo + "', '" + fac_Notebook.getprecio_total + "')";
+            datos();
+            string sql = "INSERT INTO fact_notebook(cantidad, id_notebook, precio_costo, precio_total) VALUES ('" + fac_Notebook.Cantidad + "', '" + fac_Notebook.Id_notebook + "',  '" + fac_Notebook.Precio_costo + "', '" + fac_Notebook.Precio_total + "')";
+           
+
             MySqlConnection conexionDB = Conexion.Conectar();
             conexionDB.Open();
 

@@ -116,7 +116,7 @@
             // opc_buscar
             // 
             opc_buscar.FormattingEnabled = true;
-            opc_buscar.Items.AddRange(new object[] { "Marca", "Ram" });
+            opc_buscar.Items.AddRange(new object[] { "Todo", "Marca", "Ram" });
             opc_buscar.Location = new Point(109, 11);
             opc_buscar.Name = "opc_buscar";
             opc_buscar.Size = new Size(211, 28);

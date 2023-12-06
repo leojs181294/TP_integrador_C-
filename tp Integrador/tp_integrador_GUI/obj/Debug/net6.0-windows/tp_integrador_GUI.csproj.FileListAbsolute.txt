@@ -116,3 +116,4 @@ C:\Users\leojs\source\Repos\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj
 C:\Users\leojs\source\Repos\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.fac_notebook_crear.resources
 C:\Users\leojs\source\Repos\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.fac_proveedores_menu.resources
 C:\Users\leojs\source\Repos\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.fac_proveedor_crear.resources
+C:\Users\leojs\Source\Repos\TP_integrador_C-\tp Integrador\tp_integrador_GUI\obj\Debug\net6.0-windows\tp_integrador_GUI.c_conexion.resources

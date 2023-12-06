@@ -18,15 +18,15 @@ namespace tp_integrador_GUI.fac_notebook
 
         List<Fac_notebook> detalle_notebook = new List<Fac_notebook>();
 
-        public double getPrecio_final()
+       /* public double getPrecio_final()
         {
             double total = 00.00;
             foreach (Fac_notebook fac_Notebook in detalle_notebook)
             {
-                total += fac_Notebook.getprecio_total();
+                total += fac_Notebook.Precio_total();
             }
             return total;
-        }
+        }*/
         public Proveedor Proveedor_ { get => proveedor_; set => proveedor_ = value; }
         public int Id_fac_proveedor { get => id_fac_proveedor; set => id_fac_proveedor = value; }
         public DateTime Fecha_compra { get => fecha_compra; set => fecha_compra = value;}
